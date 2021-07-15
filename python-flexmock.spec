@@ -1,10 +1,10 @@
 Name:           python-flexmock
-Version:        0.10.4
+Version:        0.11.0
 Release:        5%{?dist}
 Summary:        Testing library that makes it easy to create mocks, stubs and fakes
 
 License:        BSD
-URL:            https://flexmock.readthedocs.org
+URL:            https://flexmock.readthedocs.io
 Source0:        %{pypi_source flexmock}
 
 BuildArch:      noarch
@@ -48,12 +48,12 @@ BuildRequires:  python3-twisted
 
 
 %check
-PYEXECS=%{__python3} ./tests/run_tests.sh
+make test
 
  
 %files -n python3-flexmock
 %license LICENSE
-%doc README.rst CHANGELOG docs/
+%doc README.md CHANGELOG.rst docs/
 %{python3_sitelib}/flexmock*
 %{python3_sitelib}/__pycache__/flexmock*
 
