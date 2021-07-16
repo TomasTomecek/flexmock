@@ -33,4 +33,5 @@ setup(
     python_requires=">=3.6.2,<4.0.0",
     packages=["flexmock"],
     package_dir={"": "src"},
+    include_package_data=True,
 )
