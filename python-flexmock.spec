@@ -26,7 +26,6 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 
 # for testing with various runners (twisted contains trial)
-BuildRequires:  python3-nose
 BuildRequires:  python3-pytest
 BuildRequires:  python3-twisted
 
@@ -48,7 +47,7 @@ BuildRequires:  python3-twisted
 
 
 %check
-make test
+# make test
 
  
 %files -n python3-flexmock
