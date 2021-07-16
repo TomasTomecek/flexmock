@@ -53,8 +53,7 @@ BuildRequires:  python3-twisted
 %files -n python3-flexmock
 %license LICENSE
 %doc README.md CHANGELOG.rst docs/
-%{python3_sitelib}/flexmock*
-%{python3_sitelib}/__pycache__/flexmock*
+%{python3_sitelib}/*
 
 
 %changelog
