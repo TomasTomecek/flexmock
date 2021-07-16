@@ -11,7 +11,6 @@ setup(
     author_email="slavek@redhat.com",
     url="https://flexmock.readthedocs.io/",
     license="BSD-2-Clause",
-    py_modules=["flexmock"],
     description="flexmock is a testing library for Python that makes it easy to create mocks,"
     "stubs and fakes.",
     long_description=long_description,
@@ -32,4 +31,6 @@ setup(
         "Topic :: Software Development :: Testing",
     ],
     python_requires=">=3.6.2,<4.0.0",
+    packages=["flexmock"],
+    package_dir={"": "src"},
 )
